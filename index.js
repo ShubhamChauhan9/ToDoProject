@@ -39,9 +39,9 @@ function renderList(Array) {
         }
     }
     if (leftTasks.length != 0) {
-        totalTasks.innerHTML = `notStarted:${leftTasks.length}`;
+        totalTasks.innerHTML = `Left:${leftTasks.length}`;
     } else {
-        totalTasks.innerHTML = `notStarted:${taskList.length-flagCount}`;
+        totalTasks.innerHTML = `Left:${taskList.length-flagCount}`;
     }
     completedTasks.innerHTML = `<i class="fa-solid fa-check-double"></i>Completed:${flagCount}`;
 }

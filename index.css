@@ -13,12 +13,12 @@ body {
     height: 100vh;
 }
 
-#toto-app-container {
+#todo-app-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
     gap: 10px;
     border-radius: 5px;
     padding: 10px;
@@ -138,4 +138,43 @@ button {
 
 .item-row:hover .todocontent {
     display: inline-block;
+}
+
+
+/* media tags responsive design */
+
+@media screen and (max-width:400px) {
+    #todo-app-container {
+        width: 88%;
+    }
+}
+
+@media screen and (min-width:400px) {
+    #todo-app-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #todo-app-container {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:767px) {
+    #todo-app-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #todo-app-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #todo-app-container {
+        width: 50%;
+    }
 }
